@@ -88,6 +88,7 @@ export default function Hero({ language }: HeroProps) {
             <Button
               size="lg"
               className="bg-white text-blue-600 hover:bg-blue-100 text-lg px-8 py-6 rounded-full shadow-lg transition duration-300"
+              onClick={() => window.open("https://link.funnelsfusion.io/payment-link/679babf6a618e12228636c3b", "_blank")}
             >
               {content[language].cta}
               <ArrowLeft className={`${language === "ar" ? "mr-2" : "ml-2"} h-5 w-5`} />
