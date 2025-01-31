@@ -75,8 +75,12 @@ export default function CallToAction({ language }: CallToActionProps) {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mb-8 text-lg text-white"
         >
-          <span className="line-through text-gray-400">{content[language].priceInfoOriginal}</span>
-          <span className="ml-4 text-xl font-bold text-yellow-300">{content[language].priceInfoToday}</span>
+          <div className="text-red-500 text-lg line-through">
+            {content[language].priceInfoOriginal}
+          </div>
+          <div className="text-green-500 text-xl font-bold mt-2">
+            {content[language].priceInfoToday}
+          </div>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Button
