@@ -16,15 +16,18 @@ const content = {
     description: "لأنك تستحق السلام الداخلي",
     limitedOffer: "أماكن محدودة لضمان تجربة شخصية ومتابعة دقيقة.",
     cta: "احجز مكانك الآن",
+    priceInfoOriginal: "سعر أساسي 997 دولار", // Original price in Arabic
+    priceInfoToday: "سعر اليوم 497 دولار", // Today's price in Arabic
   },
   en: {
     title: "Start Your Journey Now",
     description: "Because you deserve inner peace.",
     limitedOffer: "Limited spots to ensure a personalized experience and close follow-up.",
     cta: "Book Your Spot Now",
+    priceInfoOriginal: "Original Price: $997", // Original price in English
+    priceInfoToday: "Today's Price: $497", // Today's price in English
   },
 }
-
 
 export default function CallToAction({ language }: CallToActionProps) {
   const controls = useAnimation()
@@ -66,10 +69,20 @@ export default function CallToAction({ language }: CallToActionProps) {
         >
           <p className="text-red-300 text-xl">{content[language].limitedOffer}</p>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mb-8 text-lg text-white"
+        >
+          <span className="line-through text-gray-400">{content[language].priceInfoOriginal}</span>
+          <span className="ml-4 text-xl font-bold text-yellow-300">{content[language].priceInfoToday}</span>
+        </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Button
             size="lg"
             className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-6 rounded-full shadow-lg transition duration-300"
+            onClick={() => window.open("https://link.funnelsfusion.io/payment-link/679babf6a618e12228636c3b", "_blank")}
           >
             {content[language].cta}
             <ArrowLeft className={`${language === "ar" ? "mr-2" : "ml-2"} h-5 w-5`} />
@@ -79,4 +92,3 @@ export default function CallToAction({ language }: CallToActionProps) {
     </section>
   )
 }
-

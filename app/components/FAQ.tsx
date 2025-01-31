@@ -27,7 +27,7 @@ const content = {
       {
         question: "ماهي مدة البرنامج؟",
         answer:
-          "على مدار ستة أسابيع سنعمل سويا على مساعدتك على التغلب على صدمتك النفسية إلى أن تصل إلا راحة البال و التوازن النفسي الذي تبحت عنه.",
+          "على مدار ستة أشهر سنعمل سويا على مساعدتك على التغلب على صدمتك النفسية إلى أن تصل إلا راحة البال و التوازن النفسي الذي تبحت عنه.",
       },
     ],
   },
@@ -50,7 +50,7 @@ const content = {
       {
         question: "How long is the program?",
         answer:
-          "Over the course of six weeks, we will work together to help you overcome your psychological trauma until you reach the peace of mind and psychological balance you are looking for.",
+          "Over the course of six months, we will work together to help you overcome your psychological trauma until you reach the peace of mind and psychological balance you are looking for.",
       },
     ],
   },

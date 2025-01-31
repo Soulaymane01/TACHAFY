@@ -47,7 +47,7 @@ export default function Contact({ language }: ContactProps) {
                 <p className="mb-4 text-lg">
                   {content[language].email}:{" "}
                   <a href="mailto:example@example.com" className="text-blue-600 hover:underline">
-                    example@example.com
+                  Info@chaimaetouhami.com
                   </a>
                 </p>
                 <motion.div whileHover={{ scale: 1.1, rotate: -5 }} whileTap={{ scale: 0.9 }}>
