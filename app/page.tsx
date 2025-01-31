@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Hero from "./components/Hero"
-import ProgramSlides from "./components/ProgramSlides"
 import FreeOfferings from "./components/FreeOfferings"
 import SuccessStories from "./components/SuccessStories"
 import CallToAction from "./components/CallToAction"
