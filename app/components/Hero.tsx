@@ -10,8 +10,8 @@ interface HeroProps {
 
 const content = {
   ar: {
-    title: "إستعد نفسك الآن",
-    subtitle: "دليلك الكامل لتشافي العميق من الصدمات",
+    title: "  برنامج تشافي",
+    subtitle: 'تشافي" دليلك الكامل لتشافي العميق من الصدمات"',
     description:"و علاج نفسك بنفسك",
     cta: "ابدأ الآن",
   },

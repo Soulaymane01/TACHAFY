@@ -44,16 +44,16 @@ export default function Contact({ language }: ContactProps) {
                 <motion.div whileHover={{ scale: 1.1, rotate: 5 }} whileTap={{ scale: 0.9 }}>
                   <Mail className="w-12 h-12 text-blue-600 mb-4" />
                 </motion.div>
-                <p className="mb-4 text-lg">
+                <p className="mb-4 text-lg text-center md:text-left">
                   {content[language].email}:{" "}
                   <a href="mailto:example@example.com" className="text-blue-600 hover:underline">
-                  Info@chaimaetouhami.com
+                    Info@chaimaetouhami.com
                   </a>
                 </p>
                 <motion.div whileHover={{ scale: 1.1, rotate: -5 }} whileTap={{ scale: 0.9 }}>
                   <Phone className="w-12 h-12 text-blue-600 mb-4" />
                 </motion.div>
-                <p className="text-lg">
+                <p className="text-lg text-center md:text-left">
                   {content[language].phone}: <span className="text-blue-600">+212653939456</span>
                 </p>
               </CardContent>
@@ -64,4 +64,3 @@ export default function Contact({ language }: ContactProps) {
     </section>
   )
 }
-
