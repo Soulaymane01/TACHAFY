@@ -11,7 +11,7 @@ interface HeroProps {
 const content = {
   ar: {
     title: "  برنامج تشافي",
-    subtitle: 'تشافي" دليلك الكامل لتشافي العميق من الصدمات"',
+    subtitle: "دليلك الكامل لتشافي العميق من الصدمات",
     description:"و علاج نفسك بنفسك",
     cta: "ابدأ الآن",
   },
@@ -97,7 +97,7 @@ export default function Hero({ language }: HeroProps) {
         </motion.div>
       </div>
       <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-20 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
       >
